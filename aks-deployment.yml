@@ -6,21 +6,30 @@ metadata:
     app: aks
 spec:
   replicas: 2
-  template:
-    metadata:
+  selector: # selector - the workloads the deployment will manage
+    matchLabels: # Match all pods with the defined labels
+      app: aks # Labels follow the `name: value` template
+  template: # This is the template of the pod inside the deployment
+    metadata: # Metadata for the pod
       name: aks
       labels:
         app: aks
     spec:
-      containers:
+      containers: # Here we define all containers
       - name: aks
         image: rtacraksdemo.azurecr.io/dotnetcore-microservices:latest
         imagePullPolicy: IfNotPresent
-      restartPolicy: Always
-  selector:
-    matchLabels:
-      app: aks
-
+        ports:
+            - containerPort: 80
+              name: http
+        resources:
+            requests: # Minimum amount of resources requested
+              cpu: 100m
+              memory: 128Mi
+            limits: # Maximum amount of resources requested
+              cpu: 250m
+              memory: 256Mi
+      # restartPolicy: Always
 
 ---
 
