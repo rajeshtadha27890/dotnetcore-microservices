@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "kube-handson-lab"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "kube-handson-lab-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.18.10"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "servicePrincipalClientId": {
+            "value": null
+        },
+        "servicePrincipalClientSecret": {
+            "value": null
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "aadSessionKey": {
+            "value": null
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-b8ccf0f7-0d71-4234-b3da-9856d465c44a-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/b8ccf0f7-0d71-4234-b3da-9856d465c44a/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-b8ccf0f7-0d71-4234-b3da-9856d465c44a-eus"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "principalId": {
+            "value": "bf1291e6-dca1-4a12-814f-0dbeb5d877bd"
+        }
+    }
+}
