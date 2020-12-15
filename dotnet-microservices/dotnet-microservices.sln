@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-microservices", "dotnet-microservices\dotnet-microservices.csproj", "{D282A842-BC19-49F3-B9F3-E425C90E589B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi2", "webapi2\webapi2.csproj", "{4FA1344D-A582-4A40-894E-B27C94042867}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D282A842-BC19-49F3-B9F3-E425C90E589B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D282A842-BC19-49F3-B9F3-E425C90E589B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D282A842-BC19-49F3-B9F3-E425C90E589B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D282A842-BC19-49F3-B9F3-E425C90E589B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA1344D-A582-4A40-894E-B27C94042867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA1344D-A582-4A40-894E-B27C94042867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA1344D-A582-4A40-894E-B27C94042867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA1344D-A582-4A40-894E-B27C94042867}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2E0C08B-F93F-4AE1-863F-4D9EE9AF1D37}
+	EndGlobalSection
+EndGlobal
